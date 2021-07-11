@@ -1,0 +1,27 @@
+body, html {
+  height: 100%;
+}
+
+/* Container holding the image and the text */
+.bg {
+  /* The image used */
+  background-image: url("../img/unsplash-background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Centered background text */
+.bg .centered {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
