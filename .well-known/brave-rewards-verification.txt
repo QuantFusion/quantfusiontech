@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: quantfusiontech.com
-Token: 5b0122e4b27accd1f3cab2562ad86b931ad9ae76c5bb9fabe532fb4f76a5d7fb
