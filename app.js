@@ -67,7 +67,7 @@ app.post("/compose", function(req, res){
 
 app.get("/posts/:postId", function(req, res){
 
-const requestedPostId = req.params.postId;
+  const requestedPostId = req.params.postId;
   
   // find the post with a matching id in the posts collection 
   Post.findOne({_id: requestedPostId}, function(err, post){
