@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 const blog_user = process.env.BUSINESS_BLOG_MONGO_ATLAS_USER;
-const blog_pass = process.env.BUSINESS_BLOG_MONGO_ATLAS_PASS;
-mongoose.connect(`mongodb+srv://${blog_user}:${encodeURIComponent(${blog_pass})}@cluster0.0v7ihz6.mongodb.net/blogDB`, {useNewUrlParser: true});
+const blog_pass = encodeURIComponent(process.env.BUSINESS_BLOG_MONGO_ATLAS_PASS);
+mongoose.connect(`mongodb+srv://${blog_user}:${blog_pass}@cluster0.0v7ihz6.mongodb.net/blogDB`, {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
