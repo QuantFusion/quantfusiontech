@@ -17,7 +17,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+const blog_user = process.env.BUSINESS_BLOG_MONGO_ATLAS_USER;
+const blog_pass = process.env.BUSINESS_BLOG_MONGO_ATLAS_PASS;
+mongoose.connect(`mongodb+srv://${blog_user}:${encodeURIComponent(blog_pass)}@cluster0.0v7ihz6.mongodb.net/blogDB`, {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
@@ -37,16 +39,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/compose", function(req, res){
-
-  // TODO: Maybe something like this?
-  // TODO: Change here with encryption / hashing
-  // if (req.body.postPass == process.env.QFT_DB_PASS) {
-  //   res.render("compose");
-  // } else {
-  //   console.log("Not authorized to view!");
-  // }
   res.render("compose");
-
 });
 
 app.post("/compose", function(req, res){
@@ -88,8 +81,7 @@ app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
 
-
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
 });
 
