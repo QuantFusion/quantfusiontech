@@ -40,6 +40,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/compose", function(req, res){
+  // TODO: ... add more security
   res.render("compose");
 });
 
