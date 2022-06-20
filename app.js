@@ -85,10 +85,7 @@ app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server has started successfully.");
-});
-// app.set( 'port', ( process.env.PORT || 5000 ));
+app.set( 'port', ( process.env.PORT || 3000 ));
 
 // Start node server
 app.listen( app.get( 'port' ), function() {
