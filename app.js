@@ -6,6 +6,7 @@ const ejs = require("ejs");
 
 const homeStartingContent = "Welcome friend.";
 const aboutContent = "As the founder, it is my mission to explore the art-tech space and draw insights that will impact both industries.";
+const auditContent = "Coming soon! Audit approval by clients is vital before publishing.";
 const contactContent = "Contact me through social media.";
 
 const app = express();
@@ -22,6 +23,10 @@ app.get("/", function(req, res){
 
 app.get("/about", function(req, res){
   res.render("about", {aboutContent: aboutContent});
+});
+
+app.get("/audits", function(req, res){
+  res.render("audits", {auditContent: auditContent});
 });
 
 app.get("/contact", function(req, res){
