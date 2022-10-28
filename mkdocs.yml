@@ -1,1 +1,21 @@
-site_name: My Docs
+site_name: QuantFusion Technologies LLC
+repo_url: https://github.com/iotaaxel/quantfusiontech
+repo_name: iotaaxel/quantfusiontech
+#use_directory_urls: false #only set for mkdocs build
+edit_uri: "" #disable edit button
+
+nav: 
+  - Home: index.md
+  - Audits:  audits.md
+  - Contact: contact.md
+
+copyright: |
+  <div style="float: left; padding-right: 1em;">
+    <a href="https://www.quantfusiontech.com"><img src="https://github.com/iotaaxel/quantfusiontech/blob/master/docs/images/company-blue-white-log.png?raw=true" width="100px" /></a>
+  </div>
+  <span>
+    &#169; 2022 QuantFusion Technologies LLC. All Rights Reserved.
+  <div style="color: #6a6868"><span>Made with</span> <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>  | <i>Website designed by Axel Iota.</i></div>
+
+theme:
+  name: material
