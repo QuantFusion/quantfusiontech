@@ -11,11 +11,48 @@ nav:
 
 copyright: |
   <div style="float: left; padding-right: 1em;">
-    <a href="https://www.quantfusiontech.com"><img src="https://github.com/iotaaxel/quantfusiontech/blob/master/docs/images/company-blue-white-log.png?raw=true" width="100px" /></a>
+    <a href="https://www.quantfusiontech.com"><img src="https://github.com/iotaaxel/quantfusiontech/blob/master/docs/images/logo_transparent.png" width=100px /></a>
   </div>
+  <br>
   <span>
     &#169; 2022 QuantFusion Technologies LLC. All Rights Reserved.
-  <div style="color: #6a6868"><span>Made with</span> <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>  | <i>Website designed by Axel Iota.</i></div>
+  </span>
+  <div style="color: #6a6868">Made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs.</a><br><i> Designed by Axel Iota.</i>❤️</div>
 
 theme:
   name: material
+  logo: images/logo_white.png
+  favicon: images/logo_white.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - search.suggest
+    - search.share
+    - toc.integrate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+
+  palette:
+    - primary: amber #controls header color option
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  generator: false # using in copyright override section 
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/iota_axel
+    - icon: fontawesome/brands/github
+      link: https://github.com/iotaaxel #todo: create/enable a discussions section
+
+extra_css:
+  - stylesheets/extra.css

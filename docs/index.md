@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Welcome!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Background
+* **Founder**: Axel Iota
+* **Role**: Research (AI/ML + Security) & Development
+* **Studied**: Computer Science, Applied Mathematics, Mechanical Engineering
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Mission
+<p> As the founder, it is my mission to explore the art-tech space and draw insights that will impact both industries. </p>
+`<simply insert code>` and build awesome things!
