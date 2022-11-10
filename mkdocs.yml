@@ -8,6 +8,7 @@ nav:
   - Home: index.md
   - Audits:  audits.md
   - Design:  design.md
+  - Blog: blog.md
   - Contact: contact.md
 
 copyright: |
