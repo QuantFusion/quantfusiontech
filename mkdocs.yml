@@ -7,7 +7,7 @@ edit_uri: "" #disable edit button
 nav: 
   - Home: index.md
   - Audits:  audits.md
-  - Design:  design.md
+  - Projects:  projects.md
   - Blog: blog.md
   - Contact: contact.md
 
