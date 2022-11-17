@@ -5,9 +5,9 @@ categories:
   - Study
   - CS
 links: 
-  - https://pdos.csail.mit.edu/6.824/index.html
-  - http://networksciencebook.com
-  - https://www.cs.cornell.edu/~bindel/class/cs5220-f15
+  - CS 6.824 @ MIT: https://pdos.csail.mit.edu/6.824/index.html
+  - Network Science: http://networksciencebook.com
+  - CS 5220 @ Cornell: https://www.cs.cornell.edu/~bindel/class/cs5220-f15
 ---
 
 # Hello world!

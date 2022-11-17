@@ -8,8 +8,10 @@ nav:
   - Home: index.md
   - Audits:  audits.md
   - Projects:  projects.md
-  - Blog:
-    - blog/index.md 
+  - Blog: 
+    - blog/index.md
+    # - 2022:
+    #       - blog/posts/self-study-nov-16-2022.md
   - Contact: contact.md
 
 copyright: |
@@ -22,9 +24,8 @@ copyright: |
   </span>
   <div style="color: #6a6868">Made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs.</a><br><i> Designed by Axel Iota.</i>❤️</div>
 
-# Configuration with everything except Insiders plugins
-# plugins:
-#   - blog <- this is an insiders plugin
+plugins:
+  - blog
 
 theme:
   name: material

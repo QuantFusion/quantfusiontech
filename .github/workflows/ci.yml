@@ -18,4 +18,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pip install git+https://"$GH_TOKEN"@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install mkdocs-rss-plugin
       - run: mkdocs gh-deploy --force
