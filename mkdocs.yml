@@ -22,8 +22,9 @@ copyright: |
   </span>
   <div style="color: #6a6868">Made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs.</a><br><i> Designed by Axel Iota.</i>❤️</div>
 
-plugins:
-  - blog
+# Configuration with everything except Insiders plugins
+# plugins:
+#   - blog <- this is an insiders plugin
 
 theme:
   name: material

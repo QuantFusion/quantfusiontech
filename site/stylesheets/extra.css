@@ -1,8 +1,0 @@
-:root {
-    /* Match footer with header primary for aesthetic reasons */
-    --md-footer-bg-color--dark: #ffc105;
-  }
-  
-.md-footer__inner:not([hidden]){
-    display: none;
-}
