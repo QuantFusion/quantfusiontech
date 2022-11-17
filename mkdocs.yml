@@ -8,7 +8,8 @@ nav:
   - Home: index.md
   - Audits:  audits.md
   - Projects:  projects.md
-  - Blog: blog.md
+  - Blog:
+    - blog/index.md 
   - Contact: contact.md
 
 copyright: |
@@ -20,6 +21,9 @@ copyright: |
     &#169; 2022 QuantFusion Technologies LLC. All Rights Reserved.
   </span>
   <div style="color: #6a6868">Made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs.</a><br><i> Designed by Axel Iota.</i>❤️</div>
+
+plugins:
+  - blog
 
 theme:
   name: material
