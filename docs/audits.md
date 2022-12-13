@@ -2,5 +2,7 @@
 
 | Client | Public Report |
 |     :---:      |     :---:      |  
-| Escher   | n/a (pending audit)    |
-| [ParaSpace](https://para.space/)     | n/a (pending audit)      | 
+| Caviar   | n/a (pending audit)    |
+| [Forgeries](https://forgeries.io)     | n/a (pending audit)      |
+| [GoGoPool](https://www.gogopool.com)   | n/a (pending audit)    |
+| [Tigris Trade](https://tigris.trade)     | n/a (pending audit)      | 
