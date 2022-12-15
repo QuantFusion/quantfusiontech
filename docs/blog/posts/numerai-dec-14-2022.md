@@ -10,7 +10,7 @@ links:
   - Numerai Signals: https://signals.numer.ai/tournament 
 ---
 
-# Overview
+# Numerai
 
 > The Numerai Tournament is where you build machine learning models on abstract financial data to predict the stock market. 
 > Numerai Signals lets you upload stock market signals and find out how original they are compared to all other signals on Numerai. Signals can be staked with the NMR cryptocurrency to earn rewards. The best most original signals are used in Numerai's hedge fund.
