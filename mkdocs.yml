@@ -1,39 +1,28 @@
-site_name: QuantFusion Technologies LLC
-repo_url: https://github.com/iotaaxel/quantfusiontech
-repo_name: iotaaxel/quantfusiontech
+site_name: QuantFusion Technologies
+# repo_url: https://github.com/iotaaxel/quantfusiontech
+# repo_name: iotaaxel/quantfusiontech
 #use_directory_urls: false #only set for mkdocs build
 edit_uri: "" #disable edit button
 
 nav: 
   - Home: index.md
-  - Audits:  audits.md
-  - Projects:  projects.md
-  - Trading: trading.md
-  - Blog: 
-    - blog/index.md
-    # - 2022:
-    #       - blog/posts/self-study-nov-16-2022.md
-  - Contact: contact.md
 
 copyright: |
   <div style="float: left; padding-right: 1em;">
-    <a href="https://www.quantfusiontech.com"><img src="https://github.com/iotaaxel/quantfusiontech/blob/master/docs/images/logo_transparent.png?raw=true" width=100px /></a>
+    <a href="https://www.quantfusiontech.com"><img src="https://github.com/iotaaxel/quantfusiontech/blob/f28c1d7366dcbeeee0ec24f334ad21986d06ad94/docs/images/logo_transparent.png?raw=true" width=100px /></a>
   </div>
   <br>
   <span>
     &#169; 2022 QuantFusion Technologies LLC. All Rights Reserved.
   </span>
-  <div style="color: #6a6868">Made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs.</a><br><i> Designed by Axel Iota.</i>❤️</div>
 
-plugins:
-  - blog
 
 theme:
   name: material
-  logo: images/logo_white.png
-  favicon: images/logo_white.png
-  icon:
-    repo: fontawesome/brands/github
+  logo: images/logo_transparent.png
+  favicon: images/logo_transparent.png
+  # icon:
+  #   repo: fontawesome/brands/github
   features:
     - search.suggest
     - search.share
@@ -55,13 +44,13 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-extra:
-  generator: false # using in copyright override section 
-  social:
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/iota_axel
-    - icon: fontawesome/brands/github
-      link: https://github.com/iotaaxel #todo: create/enable a discussions section
+# extra:
+#   generator: false # using in copyright override section 
+#   social:
+#     - icon: fontawesome/brands/twitter 
+#       link: https://twitter.com/iota_axel
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/iotaaxel #todo: create/enable a discussions section
 
 extra_css:
   - stylesheets/extra.css

@@ -1,10 +1,21 @@
-# Welcome!
+---
+hide:
+  - navigation
+  - toc
+---
 
-## Background
-* **Founder**: Axel Iota
-* **Role**: Research (AI/ML + Security) & Development
-* **Studied**: Computer Science, Applied Mathematics, Mechanical Engineering
+# QuantFusion Technologies
 
 ## Mission
-<p> As the founder, it is my mission to explore the art-tech space and draw insights that will impact both industries. </p>
-`<simply insert code>` and build awesome things!
+
+<h2> QuantFusion Technologies is a quantitative research and development company that employs mathematical methods and draws from various disciplines to develop and optimize trading stategies. This <em>fusion</em> of disciplines fosters innovative ideas to further development.
+</h2>
+
+## Locations
+<font color='#871f23'>**New York**</font></br>
+228 Park Ave S PMB 60303<br>
+New York, New York 10003
+
+
+
+
