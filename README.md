@@ -1,5 +1,5 @@
 # QuantFusion Technolgies LLC
 
-This is the official Github Repository of the organization. In the future, a separate repository might be created.
+[![Build Status](https://github.com/iotaaxel/quantfusiontech/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/iotaaxel/quantfusiontech/actions/workflows/ci.yml)
 
-TODO: Add status/version/license markers here
+This is the official website for the organization.
