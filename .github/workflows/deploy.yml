@@ -21,7 +21,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v1  # ✅ latest working version
+        uses: actions/upload-pages-artifact@v4  # ✅ latest working version
         with:
           path: docs
 
