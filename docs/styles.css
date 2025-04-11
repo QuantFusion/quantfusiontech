@@ -1,67 +1,54 @@
 
-/* QuantFusionTech – Minimal Elite CSS */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0A1A2F;
+  --accent-color: #2A5CFF;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0A1A2F;
+  --text-color: #FAFAFA;
+  --accent-color: #2A5CFF;
+}
+
+[data-theme="quant-blue"] {
+  --bg-color: #F0F4FF;
+  --text-color: #0A1A2F;
+  --accent-color: #2A5CFF;
+}
+
+[data-theme="cybergray"] {
+  --bg-color: #121212;
+  --text-color: #DDDDDD;
+  --accent-color: #00BFFF;
+}
+
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  font-family: 'Space Mono', monospace;
-  background-color: #ffffff;
-  color: #0A1A2F;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3 {
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-  color: #0A1A2F;
-}
-
-p, a {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #0A1A2F;
+a {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 a:hover {
-  color: #2A5CFF;
+  text-decoration: underline;
 }
 
-button {
-  font-family: 'Space Mono', monospace;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
+.toggle-theme-select {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 6px 12px;
+  font-family: monospace;
+  border: 1px solid var(--accent-color);
+  background: var(--bg-color);
+  color: var(--accent-color);
   cursor: pointer;
-}
-
-.button-primary {
-  background-color: #2A5CFF;
-  color: #ffffff;
-}
-
-.button-outline {
-  background-color: transparent;
-  border: 1px solid #2A5CFF;
-  color: #2A5CFF;
-}
-
-.repo-card {
-  border: 1px solid #e1e4e8;
-  padding: 16px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  transition: 0.3s ease;
-}
-
-.repo-card:hover {
-  border-color: #2A5CFF;
-  transform: translateY(-2px);
-}
-
-.private-tag {
-  background: #ffe0e0;
-  color: #b00020;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-left: 8px;
 }
