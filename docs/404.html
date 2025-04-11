@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>404 | QuantFusion Tech</title>
+  <style>
+    body { 
+      background: #0A1A2F; color: #2A5CFF; 
+      font-family: 'Space Mono', monospace; padding: 40px;
+    }
+    .cursor { animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <pre>
+  $ <span id="typed"></span><span class="cursor">_</span>
+
+  > ERROR 404: PAGE NOT FOUND
+  > Possible commands:
+  > <a href="/" style="color: #2A5CFF;">cd ~/home</a>
+  > <a href="https://github.com/QuantFusion" style="color: #2A5CFF;">git clone tools</a>
+  </pre>
+  <script>
+    const text = "curl -X GET https://quantfusiontech.com/home";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById('typed').innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 50);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>

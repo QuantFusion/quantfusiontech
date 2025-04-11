@@ -1,0 +1,67 @@
+
+/* QuantFusionTech – Minimal Elite CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: #ffffff;
+  color: #0A1A2F;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  color: #0A1A2F;
+}
+
+p, a {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0A1A2F;
+}
+
+a:hover {
+  color: #2A5CFF;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #2A5CFF;
+  color: #ffffff;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 1px solid #2A5CFF;
+  color: #2A5CFF;
+}
+
+.repo-card {
+  border: 1px solid #e1e4e8;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.repo-card:hover {
+  border-color: #2A5CFF;
+  transform: translateY(-2px);
+}
+
+.private-tag {
+  background: #ffe0e0;
+  color: #b00020;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+}
