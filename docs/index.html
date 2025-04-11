@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>QuantFusion Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elite systems for quant research, audits, and real-time intel.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link id="favicon" rel="icon" type="image/png" href="assets/favicon_transparent_background.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- <img class="logo" src="assets/logo_primary_qf_hexagon.svg" alt="QF Logo" /> -->
+    <h1><img class="logo" src="assets/favicon_transparent_background.png" alt="QF Logo" />QuantFusion Technologies</h1>
+    <!-- <h1>QuantFusion Technologies</h1> -->
+    <p>Precision Systems for Alpha, Audit, and Automation</p>
+    <div>
+      <a class="button" href="#">Explore Capabilities</a>
+      <a class="button" href="mailto:contact@quantfusiontech.com">Request Access</a>
+    </div>
+    <select class="toggle-theme-select" onchange="setTheme(this.value)">
+      <option value="light">🌞 Light</option>
+      <option value="dark">🌙 Dark</option>
+    </select>
+  </header>
+
+  <section>
+    <h2>What We Do</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>📊 Quant Systems</h3>
+        <p>Low-latency infra & backtesting pipelines.</p>
+      </div>
+      <div class="card">
+        <h3>🔍 Security Audits</h3>
+        <p>AI-enhanced audits with CVSS scoring.</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ Threat Intel</h3>
+        <p>Post-exploit forensics & on-chain monitoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Flagship Tools</h2>
+    <div class="grid-2x2">
+      <div class="card"><h3>🔶 audit-engine</h3><p>Hybrid AI/static analysis</p></div>
+      <div class="card"><h3>📈 MantisTrading</h3><p>Quant research & execution</p></div>
+      <div class="card"><h3>🕳️ wraith</h3><p>Zero-day fuzzing simulator</p></div>
+      <div class="card"><h3>📡 sentinel</h3><p>Real-time chain monitor</p></div>
+    </div>
+    <div class="card" style="max-width: 480px; margin: 0 auto;">
+      <h3>👻 specter</h3>
+      <p>Post-incident attack reconstruction</p>
+    </div>
+  </section>
+
+  <section style="margin-top: 60px;">
+    <h2>🌍 Global Presence</h2>
+    <p>Remote-first. Offices in New York, San Francisco, London (2026), Paris (2026).</p>
+  </section>
+
+  <script>
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      const favicon = document.getElementById('favicon');
+      favicon.href = theme === "light" ? "assets/favicon_light_qf.png" : "assets/favicon_dark_qf.png";
+    }
+    (function() {
+      const saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      document.querySelector('.toggle-theme-select').value = saved;
+      document.getElementById('favicon').href = saved === "light"
+        ? "assets/favicon_light_qf.png"
+        : "assets/favicon_dark_qf.png";
+    })();
+  </script>
+</body>
+</html>
