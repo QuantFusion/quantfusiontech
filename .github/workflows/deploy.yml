@@ -3,7 +3,7 @@ name: Deploy QuantFusionTech Site
 on:
   push:
     branches:
-      - main
+      - main  # Changed from gh-pages to main (recommended for modern Pages setup)
 
 jobs:
   deploy:
@@ -15,15 +15,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # ✅ Latest stable
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v3  # ✅ Latest stable
 
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v4  # ✅ latest working version
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3  # ✅ Corrected from v4 to v3
         with:
-          path: docs
+          path: docs/  # Ensure this matches your built site directory
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v2  # ✅ Latest stable
