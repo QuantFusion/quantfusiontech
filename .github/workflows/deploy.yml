@@ -1,8 +1,9 @@
-name: Deploy Static Site to GitHub Pages (for QuantFusionTech Site)
+name: Deploy QuantFusionTech Site
 
 on:
   push:
-    branches: [ main ]  # Deploys when pushing to main
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -13,21 +14,17 @@ jobs:
       id-token: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify docs/ directory exists
-        run: |
-          if [ ! -d "docs" ]; then
-            echo "❌ Error: 'docs' folder not found!"
-            exit 1
-          fi
-          echo "✅ Found docs/ directory"
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: 'docs/'  # Deploys everything in /docs
+          path: docs
+          name: github-pages  # 👈 required artifact name
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
