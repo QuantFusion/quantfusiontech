@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>QuantFusion Tech | Alpha, Audit, Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elite systems for quant research, audits, and real-time intel.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="assets/logo_primary_qf_hexagon.png" alt="QF Logo" width="48" height="48" style="margin-right: 12px;" />
+      <h1 style="margin: 0;">QuantFusion Tech</h1>
+    </div>
+    <select class="toggle-theme-select" onchange="setTheme(this.value)">
+      <option value="light">🌞 Light</option>
+      <option value="dark">🌙 Dark</option>
+      <option value="quant-blue">💠 Quant Blue</option>
+      <option value="cybergray">🕶️ Cyber Gray</option>
+    </select>
+  </header>
+
+  <main style="text-align: center;">
+    <p style="font-size: 1.2em;">Precision Systems for Alpha, Audit, and Automation</p>
+    <a class="button" href="#">Explore Capabilities</a>
+    <a class="button" href="#">Request Access</a>
+
+    <div class="card">
+      <h2>📊 Quant Systems</h2>
+      <p>Low-latency infrastructure & backtesting pipelines.</p>
+    </div>
+    <div class="card">
+      <h2>🔍 Security Audits</h2>
+      <p>AI-enhanced smart contract audits with CVSS scoring.</p>
+    </div>
+    <div class="card">
+      <h2>🛡️ Threat Intel</h2>
+      <p>Post-incident forensics & real-time monitoring.</p>
+    </div>
+
+    <h2 style="margin-top: 60px;">🚀 Flagship Tools</h2>
+    <div class="card">
+      <h3>audit-engine</h3>
+      <p>Hybrid AI/static analysis for secure smart contracts</p>
+    </div>
+    <div class="card">
+      <h3>MantisTrading</h3>
+      <p>Modular backtesting & execution engine</p>
+    </div>
+    <div class="card">
+      <h3>wraith</h3>
+      <p>Zero-day simulation fuzzing lab</p>
+    </div>
+    <div class="card">
+      <h3>sentinel</h3>
+      <p>On-chain monitor & alerting</p>
+    </div>
+    <div class="card">
+      <h3>specter</h3>
+      <p>Forensic attack reconstruction toolkit</p>
+    </div>
+
+    <h2 style="margin-top: 60px;">🌐 Global Presence</h2>
+    <p>Remote-first. Hubs in New York, San Francisco, London (2026), Paris (2026).</p>
+  </main>
+
+  <script>
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.querySelector('.toggle-theme-select').value = savedTheme;
+    })();
+  </script>
+</body>
+</html>

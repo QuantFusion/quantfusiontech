@@ -1,0 +1,57 @@
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0A1A2F;
+  --accent-color: #2A5CFF;
+  --card-bg: #f5f5f5;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0A1A2F;
+  --text-color: #ffffff;
+  --accent-color: #2A5CFF;
+  --card-bg: #131c2f;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  padding: 10px 18px;
+  margin: 8px;
+  border: 1.5px solid var(--accent-color);
+  background-color: transparent;
+  color: var(--accent-color);
+  border-radius: 4px;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  margin: 16px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

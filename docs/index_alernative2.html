@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuantFusion Tech | Alpha, Audit, Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Institutional-grade quant systems and security tooling.">
+  <meta property="og:title" content="QuantFusion Tech">
+  <meta property="og:description" content="Institutional-grade quant systems and security tooling.">
+  <meta property="og:image" content="https://quantfusiontech.com/assets/preview.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <select class="toggle-theme-select" onchange="setTheme(this.value)">
+    <option value="light">🌞 Light</option>
+    <option value="dark">🌙 Dark</option>
+    <option value="quant-blue">💠 Quant Blue</option>
+    <option value="cybergray">🕶️ Cyber Gray</option>
+  </select>
+
+  <header style="text-align: center; padding: 100px 20px;">
+    <h1>QuantFusion Tech</h1>
+    <p>Precision Systems for Alpha, Audit, and Automation</p>
+    <div style="margin-top: 30px;">
+      <a href="#capabilities"><button class="button-primary">Explore Capabilities</button></a>
+      <a href="mailto:contact@quantfusiontech.com"><button class="button-outline">Request Access</button></a>
+    </div>
+  </header>
+
+  <section id="capabilities" style="padding: 60px 20px;">
+    <h2 style="text-align: center;">What We Do</h2>
+    <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px;">
+      <div class="repo-card">
+        <h3>📊 Quant Systems</h3>
+        <p>Low-latency trading infrastructure & backtesting pipelines.</p>
+      </div>
+      <div class="repo-card">
+        <h3>🔍 Security Audits</h3>
+        <p>AI-enhanced smart contract audits with CVSS scoring.</p>
+      </div>
+      <div class="repo-card">
+        <h3>🛡️ Threat Intel</h3>
+        <p>Post-incident forensics & real-time monitoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" style="padding: 60px 20px;">
+    <h2 style="text-align: center;">Flagship Tools</h2>
+    <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px;">
+      <div class="repo-card">
+        <h3>audit-engine <span class="private-tag">PRIVATE</span></h3>
+        <p>Hybrid AI/static analysis for stable smart contracts and systems.</p>
+      </div>
+      <div class="repo-card">
+        <h3>MantisTrading <span class="private-tag">PRIVATE</span></h3>
+        <p>Modular quant research & execution engine.</p>
+      </div>
+      <div class="repo-card">
+        <h3>wraith <span class="private-tag">PRIVATE</span></h3>
+        <p>Zero-day simulation lab and fuzzing platform.</p>
+      </div>
+      <div class="repo-card">
+        <h3>sentinel <span class="private-tag">PRIVATE</span></h3>
+        <p>On-chain threat monitoring and alerting system.</p>
+      </div>
+      <div class="repo-card">
+        <h3>specter <span class="private-tag">PRIVATE</span></h3>
+        <p>Forensic toolkit for post-exploit analysis and attribution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 60px 20px; text-align: center;">
+    <h2>Global Presence</h2>
+    <p>Remote-first. Hubs: New York, San Francisco, London (2026), Paris (2026).</p>
+  </section>
+
+  <footer style="padding: 40px 20px; text-align: center; font-size: 14px;">
+    <p>Contact: <a href="mailto:contact@quantfusiontech.com">contact@quantfusiontech.com</a></p>
+    <p><a href="https://github.com/QuantFusion" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/company/quantfusion-technologies-llc" target="_blank">LinkedIn</a></p>
+    <p>Privacy-first infrastructure. No bloat, no trackers.</p>
+  </footer>
+
+  <script>
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.querySelector('.toggle-theme-select').value = savedTheme;
+    })();
+  </script>
+</body>
+</html>
